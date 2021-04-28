@@ -1,0 +1,22 @@
+* {
+  font-family: "Nunito", monospace;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+#body {
+}
+
+footer {
+  padding-bottom: 0;
+  margin: 0;
+}
+
+#ribbon {
+  width: 100%;
+  padding: 0;
+  margin-top: 1rem;
+}

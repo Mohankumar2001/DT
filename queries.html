@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- <link href="css/chat.css" rel="stylesheet" type="text/css" /> -->
+    <link href="styles_forms.css" rel="stylesheet" type="text/css" />
+    <title>Static Template</title>
+
+    <!-- <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=yes"
+    />
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" /> -->
+    <!-- BEGIN GLOBAL MANDATORY STYLES -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito:400,600,700"
+      rel="stylesheet"
+    />
+    <!-- END GLOBAL MANDATORY STYLES -->
+  </head>
+
+  <div id="container">
+    <header id="navbar">
+      <h1>Election Updates Portal</h1>
+      <div id="links">
+        <a href="/index.html" class="link">Live News</a>
+        <a href="/queries.html" class="link">Queries</a>
+        <a href="/support.html" class="link">Support</a>
+        <a href="/info.html" class="link">Info</a>
+      </div>
+
+      <div id="google_translate_element">
+          Language:
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                {
+                  pageLanguage: "en",
+                  includedLanguages: "bn,en,gu,hi,kn,ml,mr,ta,te,ur"
+                },
+                "google_translate_element"
+              );
+            }
+          </script>
+        </div>
+  
+        <script
+          type="text/javascript"
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
+    </header>
+
+    <main id="body">
+      <h2 class="formHead">
+        Fill this form for queries and/or complaint registration
+      </h2>
+
+      <form id="queryForm">
+        <label id="name-label" for="name">
+          Name
+          <input
+            id="name"
+            placeholder="Enter your name"
+            type="text"
+            class="formElement"
+            required
+          />
+        </label>
+
+        <label id="phone-label" for="phone">
+          Phone
+          <input
+            id="phone"
+            placeholder="Enter your phone no"
+            type="text"
+            class="formElement"
+            required
+          />
+        </label>
+
+        <label id="email-label" for="email">
+          Email
+          <input
+            id="email"
+            placeholder="Enter your email-id"
+            type="email"
+            class="formElement"
+            required
+          />
+        </label>
+
+        <label id="query-label" for="queriesText">
+          Queries
+          <textarea
+            id="queriesText"
+            placeholder="Enter your queries"
+            class="formElement textar"
+          ></textarea>
+        </label>
+
+        <label id="complaints-label" for="complaintsText">
+          Complaints
+          <textarea
+            id="complaintsText"
+            placeholder="Enter your complaints"
+            class="formElement textar"
+          ></textarea>
+        </label>
+
+        <button type="submit" class="buttonStyle">Submit</button>
+      </form>
+
+      
+
+    </main>
+
+    <footer>
+        <p>
+          Want to get in touch?
+          <a href="tel:+919360087333">Ring us anytime &#9742;</a>
+        </p>
+        <p>
+          Have a suggestion?
+          <a href="mailto:someone@example.com">Write to us &#128231;</a>
+        </p>
+        <p id="ribbon">Stay safe &#128567</p>
+      </footer>
+  </div>
+</html>

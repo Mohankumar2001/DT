@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles.css" />
+    <link href="css/chat.css" rel="stylesheet" type="text/css" />
+    <title>Static Template</title>
+  </head>
+
+  <div id="container">
+    <header id="navbar">
+      <h1>Election Updates Portal</h1>
+      <div id="links">
+        <a href="/index.html" class="link">Live News</a>
+        <a href="/queries.html" class="link">Queries</a>
+        <a href="/support.html" class="link">Support</a>
+        <a href="/info.html" class="link">Info</a>
+      </div>
+
+      <div id="google_translate_element">
+          Language:
+          <script type="text/javascript">
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement(
+                {
+                  pageLanguage: "en",
+                  includedLanguages: "bn,en,gu,hi,kn,ml,mr,ta,te,ur"
+                },
+                "google_translate_element"
+              );
+            }
+          </script>
+        </div>
+  
+        <script
+          type="text/javascript"
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+        ></script>
+    </header>
+
+    <main id="body">
+      <h2 class="formhead">
+        Provide support to us by volunteering to help people who are unable to
+        vote
+      </h2>
+      <h4 class="formhead">
+        Give us your information so we could allot places near you
+      </h4>
+
+      <form id="queryForm">
+        <label id="name-label" for="name">
+          Name
+          <input
+            id="name"
+            placeholder="Enter your name"
+            type="text"
+            class="formElement"
+            required
+          />
+        </label>
+
+        <label id="phone-label" for="phone">
+          Phone
+          <input
+            id="phone"
+            placeholder="Enter your phone no"
+            type="text"
+            class="formElement"
+            required
+          />
+        </label>
+
+        <label id="email-label" for="email">
+          Email
+          <input
+            id="email"
+            placeholder="Enter your email-id"
+            type="email"
+            class="formElement"
+            required
+          />
+        </label>
+
+        <label id="query-label" for="addText">
+          Address
+          <textarea
+            id="addText"
+            placeholder="Enter your address"
+            class="formElement textar"
+          ></textarea>
+        </label>
+
+        <div>
+          Type of work you can help with:
+          <label for="onsite" class="blockDisplay">
+            <input name="help" id="onsite" value="onsite" type="checkbox" />
+            Visit onsite camps
+          </label>
+
+          <label for="materials" class="blockDisplay">
+            <input
+              name="help"
+              id="materials"
+              value="materials"
+              type="checkbox"
+            />
+            Distribution of materials
+          </label>
+
+          <label for="remote" class="blockDisplay">
+            <input name="help" id="remote" value="remote" type="checkbox" />
+            Provide updates to remote areas via radio/tv
+          </label>
+        </div>
+
+        <button type="submit" class="buttonStyle">Submit</button>
+      </form>
+
+      <!-- <form class="supportForm">
+          <label for="name" class="formEle">name: </label>
+          <input type="text" name="name" class="formEle" />
+          <label for="name" class="formEle">email: </label>
+          <input type="email" name="email" class="formEle" />
+          <label for="address" class="formEle">Address: </label>
+          <input type="textArea" name="address" class="formEle" />
+          Type of work you can help:
+          <div class="formEle">
+            <input type="checkbox" id="onsite" name="onsite" value="onsite" />
+            <label for="onsite"> visit onsite Camps</label>
+          </div>
+          <div class="formEle">
+            <input
+              type="checkbox"
+              id="distribute"
+              name="distribute"
+              value="distribute"
+            />
+            <label for="distribute" class="formEle">
+              Distribution of materials</label
+            >
+          </div>
+          <div class="formEle">
+            <input type="checkbox" id="radio_" name="radio_" value="Boat" />
+            <label for="radio_" class="formEle">
+              Provide updates to remote areas via radio/tv</label
+            >
+          </div>
+        </form> -->
+      <div>
+        Contribute for those who are unable to vote economically:
+        <input type="text" placeholder="Enter the amount you want to donate" />
+        <button type="submit">Donate</button>
+      </div>
+    </main>
+
+    <footer>
+        <p>
+          Want to get in touch?
+          <a href="tel:+919360087333">Ring us anytime &#9742;</a>
+        </p>
+        <p>
+          Have a suggestion?
+          <a href="mailto:someone@example.com">Write to us &#128231;</a>
+        </p>
+        <p id="ribbon">Stay safe &#128567</p>
+      </footer>
+  </div>
+</html>
